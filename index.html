@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    .flex1 {
+      background: #BC50FF;
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+        position: relative;
+        animation: myfirst 5s 5;
+        animation-direction: alternate;
+    }
+    @keyframes myfirst {
+      0%   {background: #BC50FF; left: 0px; top: 0px;}
+      25%  {background: #5E50FF; left: 200px; top: 0px;}
+      50%  {background: #FF18A3; left: 200px; top: 200px;}
+      75%  {background: #2400FF; left: 0px; top: 200px;}
+      100% {background: #BC50FF; left: 0px; top: 0px;}
+    }
+    .motion {
+      width: 4em;
+      height: 4em;
+  border-radius: 50%;
+  background: #9E00FF;
+  position: relative;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+ .down {
+   width: 4em;
+   height: 4em;
+   border-radius: 50%;
+  background: #67A4FF;
+  position: relative;
+  animation: move infinite;
+  animation-duration: 3s;
+}
+
+@keyframes move {
+  from {top: -600px; left: 300px;}
+  to {top: 80px; left: 300px;}
+}
+   .ball {
+     background: #5E50FF;
+     width: 4em;
+     height: 4em;
+     position: absolute;
+     left: -340px;
+     top: -150px;
+      animation: bounce 1.3s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+      border-radius: 50%;
+
+    }
+    .shar4_var4 {
+        position: absolute;
+        width: 4em;
+        height: 4em;
+        background: #FF83CD;
+        border-radius: 50%;
+        left: -400px;
+        top: -170px;
+        animation: share4_var4 4s linear infinite;
+    }
+    @keyframes share4_var4 {
+    0%{bottom: 100%; left: 60%;}
+    12%{transform: rotate(360deg); bottom: 100%; left:100%; width: 4em; height: 4em;}
+    37%{transform: rotate(360deg); bottom: 0%; left:100%; width: 4em; height: 4em;}
+    63%{transform: rotate(360deg); bottom: 0%; left:0%; width: 4em; height: 4em;}
+    88%{transform: rotate(360deg); bottom: 100%; left:0%; width: 4em; height: 4em;}
+    100%{transform: rotate(360deg); bottom: 100%; left:60%; width: 4em; height: 4em;}
+}
+
+.shar {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    background: #7B0BBF;
+    border-radius: 50%;
+    left: 490px;
+    top: -260px;
+    animation: shareleft 4s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+
+  }
+@keyframes shareleft {
+  0% {
+  	transform:translateY(-100%);
+  	opacity: 0;
+  }
+  5% {
+    	transform:translateY(-100%);
+      opacity: 0;
+  }
+  15% {
+	transform:translateY(0);
+	padding-bottom: 5px;
+}
+
+50% {
+    transform:translateY(-30%);
+}
+}
+.eye {
+  position: absolute;
+top:260px;
+left:100px;
+width: 4em;
+height: 4em;
+border-radius: 50%;
+background-color: #5A078C;
+transition: left 2s linear 0.2s;
+}
+.eye:hover {
+left: 200px;
+}
+
+    .sevena .circle1-container {
+    animation: move-right 6s infinite cubic-bezier(.30,.48,.42,.60);
+    position: absolute;
+    left: calc(110% - 2em);
+  top: calc(50% - 2em);
+  }
+    .sevena .circle1 {
+      animation: slope 6s infinite linear;
+      border-radius: 50%;
+      position: relative;
+      left: auto;
+      right: 120px;
+      top: auto;
+      }
+    .sevena .shape-container {
+animation: move-right 6s infinite cubic-bezier(.37,.55,.49,.67);
+position: absolute;
+left: calc(50% - 4em);
+top: calc(50% - 4em);
+}
+.sevena .shape {
+animation: heavy 6s infinite linear;
+border-radius: 50%;
+position: relative;
+left: auto;
+top: auto;
+}
+@keyframes bounce {
+  from, to {
+    transform: translateY(30vh) scaleY(.98);
+  }
+  80% {
+    transform: translateY(15vh) scaleY(1.02);
+  }
+}
+
+
+@keyframes heavy {
+0% {
+  transform: translateY(-20em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+15% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+25% {
+  transform: translateY(-4em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+32.5% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+40% {
+  transform: translateY(0em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+45% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+50% {
+  transform: translateY(3em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+56% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+60% {
+  transform: translateY(6em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+64% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+66% {
+  transform: translateY(7.5em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+70%, 100% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+}
+@keyframes slope {
+0% {
+  transform: translateY(-20em);
+  animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+}
+ 100% {
+  transform: translateY(8em);
+  animation-timing-function: cubic-bezier(.19,1,.7,1);
+}
+100% {
+ transform: translateY(8em);
+ animation-timing-function: cubic-bezier(.25,7,.13,7);
+}
+}
+
+
+.bon {
+  background: #897EFF;
+  width: 4em;
+  height: 4em;
+  position: relative;
+  left: 390px;
+  top: -200px;
+  border-radius: 50%;
+	animation: ballo 10s infinite;
+}
+
+@keyframes ballo {
+  0% {
+    transform: translateY(-20px);
+    animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+  50% {
+    transform: translateY(100px);
+    animation-timing-function: cubic-bezier(.19,1,.7,1);
+  }
+  100% {
+    transform: translateY(-20px);
+    animation-timing-function: cubic-bezier(.51,.01,.79,.02);
+  }
+
+}
+body {
+margin: 0;
+background: #EBFF00;
+}
+.shape {
+background: #009BFF;
+width: 4em;
+height: 4em;
+position: absolute;
+top: calc(50% - 2em);
+left: calc(50% - 2em);
+}
+.circle1 {
+background: #2400FF;
+width: 4em;
+height: 4em;
+position: absolute;
+top: calc(110% - 4em);
+left: calc(50% - 2em);
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <h1></h1>
+<h2><a href="" target="_parent"></h2>
+<article class="principle sevena">
+    <div class="shape-container">
+     <div class="shape a"></div>
+      <div class="circle1"></div>
+       <div class="ball"></div>
+        <div class="flex1"></div>
+         <div class="motion"></div>
+          <div class="down"></div>
+           <div class="bon"></div>
+            <div class="shar4_var4"></div>
+             <div class="shar"></div>
+              <div class="eye">
+
+              </div>
+
+      </div>
+    </div>
+  </article>
+  </body>
+</html>
